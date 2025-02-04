@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="styleguide.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #341e10;
+            color: #f0e6d2; /* Warna teks utama */
+        }
+        .container {
+            max-width: 375px;
+            margin: 0 auto;
+            background-color: var(--primary);
+            padding: 20px;
+        }
+        .header {
+            position: relative;
+            text-align: center;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 28px; /* Ukuran teks judul utama diperbesar */
+        }
+        .menu-section {
+            margin-top: 20px;
+        }
+        .menu-title {
+            font-family: "Open Sans", sans-serif;
+            font-size: 20px; /* Ukuran teks judul menu diperbesar */
+            font-weight: bold;
+            text-align: center;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            background: #3c2618;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+            flex-direction: row; /* Gambar dan teks sejajar secara horizontal */
+        }
+        .menu-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .menu-item div {
+            flex: 1;
+        }
+        .menu-item h3 {
+            margin: 0;
+            font-size: 18px; /* Ukuran teks nama menu diperbesar */
+        }
+        .menu-item p {
+            margin: 5px 0 0;
+            font-size: 14px; /* Ukuran teks deskripsi menu diperbesar */
+            color: #c9cabd; /* Warna teks sekunder */
+        }
+        @media (max-width: 480px) {
+            .menu-item {
+                flex-direction: column; /* Gambar dan teks bertumpuk secara vertikal */
+                text-align: center;
+            }
+            .menu-item img {
+                margin-right: 0;
+                margin-bottom: 10px; /* Jarak antara gambar dan teks */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/bg-food.jpg" alt="Background">
+            <h1>Eid Milad Shawarma Restaurant</h1>
+        </div>
+        <div class="menu-section">
+            <div class="menu-title">Arabic Cuisine</div>
+            <div class="menu-item">
+                <img src="images/Shawarma.png" alt="Shawarma">
+                <div>
+                    <h3>Shawarma</h3>
+                    <p>Tortila ⋅ Ayam ⋅ Tomat ⋅ Bawang Bombay ⋅ Mayonaise ⋅ Selada ⋅ Garam Masala ⋅ Yoghurt</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/Nasi mandhi.png" alt="Nasi Mandhi">
+                <div>
+                    <h3>Nasi Mandhi</h3>
+                    <p>Beras Basmati ⋅ Ayam ⋅ Kismis ⋅ Kacang Almond ⋅ Acar ⋅ Sambal ⋅ Jinten ⋅ Pala ⋅ Kayu Manis</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/shorba soup.png" alt="Shorba Soup">
+                <div>
+                    <h3>Shorba Soup</h3>
+                    <p>Beras Basmati ⋅ Ayam ⋅ Kismis ⋅ Kacang Almond ⋅ Acar ⋅ Sambal ⋅ Jinten ⋅ Pala ⋅ Kayu Manis</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/Om Ali.png" alt="Um Ali">
+                <div>
+                    <h3>Um Ali</h3>
+                    <p>Telur ⋅ Roti Tawar ⋅ Susu Segar ⋅ Cinamon Powder ⋅ Gula ⋅ Kismis ⋅ Kacang Almond</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-section">
+            <div class="menu-title">Drinks</div>
+            <div class="menu-item">
+                <img src="images/Susu_kurma.png" alt="Susu Kurma">
+                <div>
+                    <h3>Susu Kurma</h3>
+                    <p>Pisang ⋅ Blueberry ⋅ Yoghurt Plain ⋅ Susu Segar</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/SeaSalt.png" alt="Sea Salt Pinaple">
+                <div>
+                    <h3>Sea Salt Pinaple</h3>
+                    <p>Cooking Cream ⋅ Garam ⋅ Nanas</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/Mango.png" alt="Mango Yoghurt Mocktail">
+                <div>
+                    <h3>Mango Yoghurt Mocktail</h3>
+                    <p>Yoghurt Plain ⋅ Mangga ⋅ Madu ⋅ Jeruk Nipis</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/Banana-Berry.png" alt="Banana Berry">
+                <div>
+                    <h3>Banana Berry Smoothies</h3>
+                    <p>Pisang ⋅ Blueberry ⋅ Yoghurt Plain ⋅ Susu segar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
