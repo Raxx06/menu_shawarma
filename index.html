@@ -50,43 +50,54 @@
             text-align: left;
         }
         .menu-item {
-            display: flex;
-            align-items: left;
-            background: #3c2618;
-            padding: 15px;
-            border-radius: 10px;
-            margin-top: 10px;
-            flex-direction: row; /* Gambar dan teks sejajar secara horizontal */
-        }
-        .menu-item img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-right: 15px;
-        }
-        .menu-item div {
-            flex: 1;
-        }
-        .menu-item h3 {
-            margin: 0;
-            font-size: 18px; /* Ukuran teks nama menu diperbesar */
-            font-weight: bold;
-        }
-        .menu-item p {
-            margin: 5px 0 0;
-            font-size: 14px; /* Ukuran teks deskripsi menu diperbesar */
-            color: #c9cabd; /* Warna teks sekunder */
-        }
-        @media (max-width: 480px) {
-            .menu-item {
-                flex-direction: column; /* Gambar dan teks bertumpuk secara vertikal */
-                text-align: left;
-            }
-            .menu-item img {
-                margin-right: 0;
-                margin-bottom: 10px; /* Jarak antara gambar dan teks */
-            }
-        }
+    display: flex;
+    align-items: center;
+    background: #3c2618;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    flex-direction: row; /* Gambar dan teks sejajar secara horizontal */
+}
+
+.menu-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.menu-item div {
+    flex: 1;
+}
+
+.menu-item h3 {
+    margin: 0;
+    font-size: 18px; /* Ukuran teks nama menu diperbesar */
+    font-weight: bold;
+}
+
+.menu-item p {
+    margin: 5px 0 0;
+    font-size: 14px; /* Ukuran teks deskripsi menu diperbesar */
+    color: #c9cabd; /* Warna teks sekunder */
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        flex-direction: row; /* Tetap horizontal pada mobile */
+        align-items: flex-start; /* Agar teks dan gambar sejajar di atas */
+    }
+
+    .menu-item img {
+        order: 2; /* Gambar dipindahkan ke kanan */
+        margin-right: 0;
+        margin-left: 15px; /* Jarak antara teks dan gambar */
+    }
+
+    .menu-item div {
+        order: 1; /* Teks dipindahkan ke kiri */
+    }
+}
     </style>
 </head>
 <body>
